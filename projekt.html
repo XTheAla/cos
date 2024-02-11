@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz z walidacją</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <script src="https://cdn.jsdelivr.net/highlight.js/10.7.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/10.7.0/styles/default.min.css">
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    </head>
+<body>
+
+
+<nav class="navigation">
+    <div class="container">
+      <ul>
+        <li><a href="#about">O nas</a></li>
+  <li><a href="#features">Napoje</a></li>
+  <li><a href="#quotes">Cytaty</a></li>
+  <li><a href="#gallery">Galeria</a></li>
+  <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <section class="splash">
+    <div class="page-intro">
+      <h1 class="main-title">Napoje na lato</h1>
+      <h2 class="main-subtitle">Jaki napój wybrać?</h2>
+      <a class="btn btn-solid" href="#about" onclick="alert('Wiesz więcej!')">Dowiedz się więcej</a>
+    </div>   
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">Dlaczego Warto Tu Zajrzeć?</h2>
+      <p class="section-intro">Na naszej stronie znajdziesz różnorodne kategorie napojów, począwszy od tradycyjnych lemoniad, po egzotyczne koktajle i orzeźwiające napoje gazowane. Każdy napój jest opisany z pasją, podkreślając unikalny smak i składniki, które sprawią, że Twoje podniebienie zatęskni za kolejnym łykiem.</p>
+    </div>
+  </section>
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Kategorie Napojów</h2>
+      <div class="features-wrapper">
+        <article class="feature">
+          <i class="fas fa-cocktail"></i>
+          <h3 class="feature-title">Lemoniada</h3>
+          <p class="feature-description">Tradycyjna Cytrynowa Lemoniada<br> Mango Mint Refresher<br>Arbuzowy Chill</p>
+        </article>
+          <article class="feature">
+            <i class="fas fa-beer"></i>
+            <h3 class="feature-title">Napoje gazowane</h3>
+          <p class="feature-description">Cola z Lodem<br>Oranżada Helene z Nutą Świeżości<br>Sprite z Owocami Leśnym</p>
+        </article>
+            <article class="feature">
+              <i class="fas fa-wine-glass"></i>
+          <h3 class="feature-title">Koktajle</h3>
+          <p class="feature-description">Truskawkowy Sen<br>Mango Tango Surprise<br>Ananasowy Raj</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="statement">
+    <div class="container">
+      <p>Wybierz swój napój</p>
+    </div>
+  </section>
+  <section class="quotes" id="quotes">
+    <div class="container">
+      <h2 class="section-title">Cytaty</h2>
+      <div class="quotes-wrapper">
+        <article class="quote">
+          <blockquote>
+    <q>Głodnemu zawsze jedzenie smakuje, a spragnionemu każdy napój wyda się dobry, toteż nie może on ocenić ni jadła, ni napoju.</q>
+    <footer>Mencjusz</footer>
+  </blockquote>
+        </article>
+        <article class="quote">
+          <blockquote>
+            <q>Inteligentni ludzie są często zmuszani do picia, by bezkonfliktowo spędzać czas z idiotami.</q>
+            <footer>Ernest Hemingway</footer>
+          </blockquote>
+        </article>
+        <article class="quote">
+          <blockquote>
+            <q>Różnica między wielbłądem a człowiekiem: wielbłąd może pracować nie pijąc przez cały tydzień; człowiek może przez tydzień pić nie pracując.</q>
+            <footer>Julian Tuwim</footer>
+          </blockquote>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="gallery" id="gallery">
+    <h2 class="section-title">Przykładowe napoje</h2>
+    <div class="gallery-wrapper">
+      <figure class="gallery-item" data-recipe="arbuzowy-shake">
+        <img src="https://i.postimg.cc/sXPTJw3R/Arbuzowy-Shake.jpg" alt="image">
+  <figcaption>Arbuzowy-Shake</figcaption>
+      </figure>
+      <figure class="gallery-item" data-recipe="koktajl-wapno">
+        <img src="https://i.postimg.cc/FKrzRK1g/Koktajl-Wapno.jpg" alt="image">
+        <figcaption>Koktajl-Wapno</figcaption>
+      </figure>
+      <figure class="gallery-item" data-recipe="lemoniada">
+        <img src="https://i.postimg.cc/gJrVTpFd/Lemoniada.jpg" alt="image">
+        <figcaption>Lemoniada</figcaption>
+      </figure>
+      <figure class="gallery-item" data-recipe="mix">
+        <img src="https://i.postimg.cc/W3KGRyTZ/Mix.jpg" alt="image">
+        <figcaption>Mix</figcaption>
+      </figure>
+      <figure class="gallery-item" data-recipe="niebieska-margarita">
+        <img src="https://i.postimg.cc/dQb24gWP/Niebieska-Margarita.jpg" alt="image">
+        <figcaption>Niebieska Margarita</figcaption>
+      </figure>
+      <figure class="gallery-item" data-recipe="różowy płyn">
+        <img src="https://i.postimg.cc/vZ36FKvm/R-owy-p-yn.jpg" alt="image">
+        <figcaption>Różowy Płyn</figcaption>
+      </figure>
+      <figure class="gallery-item" data-recipe="sok pomarańczowy">
+        <img src="https://i.postimg.cc/gc8XkjKQ/Sok-pomara-czowy.jpg" alt="image">
+        <figcaption>Sok pomarańczowy</figcaption>
+      </figure>
+      <figure class="gallery-item" data-recipe="truskawki">
+        <img src="https://i.postimg.cc/B6G3hS1P/Truskawki.jpg" alt="image">
+        <figcaption>Truskawki</figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+  <section class="recipes" id="recipes">
+    <h2 class="section-title">Przepisy na Napoje</h2>
+    <p class="feature-description">Wybierz napój ze zdjęcia, aby zobaczyć przepis.</p>
+    <div id="recipe-container"></div>
+  </section>
+  <div class="quiz-container">
+    <h2 class="quiz-title">Quiz - Napoje i drinki</h2>
+    <form id="quizForm">
+        <div class="question-container">
+            <p class="question">1. Jaki składnik jest podstawą do zrobienia lemoniady?</p>
+            <label>
+                <input type="radio" name="question1" value="a">
+                a) Jabłko
+            </label>
+            <label>
+                <input type="radio" name="question1" value="b">
+                b) Cytryna
+            </label>
+            <label>
+                <input type="radio" name="question1" value="c">
+                c) Pomarańcza
+            </label>
+        </div>
+
+        <div class="question-container">
+            <p class="question">2. Który napój jest gazowany?</p>
+            <label>
+                <input type="radio" name="question2" value="a">
+                a) Sok pomarańczowy
+            </label>
+            <label>
+                <input type="radio" name="question2" value="b">
+                b) Lemoniada
+            </label>
+            <label>
+                <input type="radio" name="question2" value="c">
+                c) Cola
+            </label>
+        </div>
+
+        <div class="question-container">
+            <p class="question">3. Do jakiego rodzaju napojów zalicza się Margaritę?</p>
+            <label>
+                <input type="radio" name="question3" value="a">
+                a) Koktajle
+            </label>
+            <label>
+                <input type="radio" name="question3" value="b">
+                b) Napoje gazowane
+            </label>
+            <label>
+                <input type="radio" name="question3" value="c">
+                c) Soki
+            </label>
+        </div>
+
+        <button type="button" id="submitBtn">Sprawdź wyniki</button>
+    </form>
+
+    <div id="results"></div>
+</div>
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Nasze media społecznościowe</h2>
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+       <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <footer class="page-footer">
+    <div class="container">
+      <p>© Alicja</p>
+      <p>Made with ♥</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+  </html>
+  
